@@ -157,3 +157,78 @@ let obj2 ={
 let {name,age} = obj2
 // console.log(name);
 console.log(age);
+
+
+
+
+let object ={
+    name:'Hema',
+    age:'14',
+    height : '50'
+}
+console.log(Object.keys(object));
+console.log(Object.values(object));
+
+
+let ans = JSON.stringify(object)
+console.log(ans);
+
+console.log(JSON.parse(ans));
+
+
+
+
+let element = document.querySelector('div')
+console.log(element)
+element.style.color =  "red"
+
+let ele = document.querySelectorAll('div')
+console.log(ele)
+
+Array.from(ele).map( item=> {
+    item.style.color =  "green"
+        
+});
+
+// Array.from(element).map(functon(item){
+//     return item.style.color =  "green"
+// })
+
+
+Array.from(ele).forEach(element => {
+    element.style.color =  "green"
+    
+});
+
+
+function getName(){
+    return 'name'
+}
+//normal function
+
+
+getName = () =>{
+    return 'name'
+}
+//Arrow function with return
+
+
+getName = () => 'name'
+//Arrow function without return
+
+
+
+
+let a  = window.setTimeout(() => {
+    console.log('hello')
+}, 100);
+clearTimeout(a)
+
+
+
+
+let b = window.setInterval(() => {
+    console.log('hello')
+}, 100);
+
+clearInterval(b)
